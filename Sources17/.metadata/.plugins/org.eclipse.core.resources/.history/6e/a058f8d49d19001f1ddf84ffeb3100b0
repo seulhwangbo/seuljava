@@ -1,0 +1,14 @@
+package ch04_ex03;
+
+import java.util.Scanner;
+
+public class ex0302 {
+
+	public static void main(String[] args) {
+		boolean run = true;
+		int balance = 0; //잔액
+		
+		Scanner scanner = new Scanner(System.in);
+	}
+
+}

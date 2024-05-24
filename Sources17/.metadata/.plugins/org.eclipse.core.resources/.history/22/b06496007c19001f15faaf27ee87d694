@@ -1,0 +1,15 @@
+package ch04_ex01;
+
+import java.io.IOException;
+
+public class While02 {
+
+	public static void main(String[] args) throws IOException {
+		System.out.println("보고 싶은 구구단은?");
+		int num = System.in.read();
+		// argument 대신에 실행시킬 때 값을 받아올 수 있을까
+		// input
+		System.out.println("num-> " + num);
+	}
+
+}

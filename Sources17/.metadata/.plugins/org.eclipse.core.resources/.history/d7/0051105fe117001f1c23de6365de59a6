@@ -1,0 +1,18 @@
+package ch02;
+
+public class VariableScopeEx {
+
+	public static void main(String[] args) {
+		//선언만 하는 변수
+		int var1;
+		// 참일 때만 수행
+		if(true) {
+			int var2;
+			var1 = 10;
+			var2 = 20;
+			System.out.println("var1->"+var1);
+			System.out.println("var2->"+var2);
+		}
+	}
+
+}

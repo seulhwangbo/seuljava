@@ -1,0 +1,17 @@
+package study0523;
+
+public class StringEx {
+// new라는 함수를 통해 같은 값을 가진 3가지의 함수가 선언하는 방식에 따라 어떻게 다른 값을 가질 수 있는지 본다.
+	public static void main(String[] args) {
+		String strVar1 = "김혁";
+		String strVar2 = "김혁";
+		//star1과 2는 같은 힙 영역을 공유한다
+		String strVar3 = new String("김혁");
+		
+		System.out.println(strVar1 == strVar2);
+		System.out.println(strVar1 == strVar3);
+		System.out.println();		
+		System.out.println(strVar1.equals(strVar2));
+		System.out.println(strVar1.equals(strVar3));
+	}
+}

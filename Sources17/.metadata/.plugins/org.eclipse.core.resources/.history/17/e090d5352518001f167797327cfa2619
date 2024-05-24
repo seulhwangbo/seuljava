@@ -1,0 +1,18 @@
+package study01;
+
+public class ConditionalOpEx {
+
+	// 비교 연산자 사용이 포인트
+	// 	int a = 20, b = 30, max;
+	public static void main(String[] args) {
+		int a = 40, b = 100, max; 
+	// int a = 20;
+	// int b = 30;
+	// int max; 
+		max = b > a ? a : b;
+		
+		System.out.println("max is " + max);
+
+	}
+
+}

@@ -1,0 +1,28 @@
+package study0523;
+
+public class SignOpEx {
+
+	public static void main(String[] args) {
+		int x = - 100;
+		int result1 = +x;
+		// result 1 +x = result1;
+		int result2 = 0;
+		short s = 100;
+		int result3 = -s;
+		
+		System.out.println("result2 초기값 ->" + result2);
+		result2 = -x;
+		System.out.println("result1 = " +   result1);
+		System.out.println("result2 = " +  	result2);
+		System.out.println("result3 = " +   result3);
+
+
+	}
+	/*
+	result2 초기값->0
+	result1= -100
+	result2= 100
+	result3= -100
+	 */
+
+}

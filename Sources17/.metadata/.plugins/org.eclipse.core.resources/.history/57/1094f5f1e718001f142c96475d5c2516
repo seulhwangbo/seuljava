@@ -1,0 +1,24 @@
+package study0523;
+
+public class LogicalEx {
+/*
+65대문자 이군요
+97소문자 이군요
+0~9 숫자이군요
+1. charCode6 7 
+1. charCode6 7 
+2 또는 3의 배수가 아니군요
+
+ */
+	public static void main(String[] args) {
+		int charCode1 = 'A';
+		int charCode2 = 'a';
+		int charCode3 = '3';
+		int charCode6 = 7;
+		
+		if(charCode1>=65) {
+			System.out.println(charCode1 + "대문자이시군요");
+		}
+	}
+
+}

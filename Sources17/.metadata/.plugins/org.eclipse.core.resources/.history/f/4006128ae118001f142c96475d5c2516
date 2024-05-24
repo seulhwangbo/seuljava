@@ -1,0 +1,28 @@
+package study0523;
+
+public class Op2exam {
+	public static void main(String[] args) {
+	int n1 = 10;
+	int n2 = 5;
+	boolean result;
+	
+	result = n1> n2;
+	System.out.printf("%d %c %d = %b\n", n1, '>',n2, result);
+	result = n1<n2;
+	System.out.printf("%d %c %d = %b\n", n1, '<',n2, result);
+	result = n1>=n2;
+	System.out.printf("%d %s %d = %b\n", n1, ">=", n2, result);
+	System.out.printf("%d %s %d = %b\n", n1, "<=", n2, result);
+	System.out.printf("%d %s %d = %b\n", n1, "==", n2, result);
+	System.out.printf("%d %s %d = %b\n", n1, "!=", n2, result);
+}
+}
+
+/*
+ 10 > 5 = true
+10 < 5 = false
+10 >= 5 = true
+10 <= 5 = false
+10 == 5 = false
+10 != 5 = true
+*/

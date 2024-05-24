@@ -1,0 +1,28 @@
+package ch04_ex01;
+
+import java.io.IOException;
+
+public class While02 {
+
+	public static void main(String[] args) throws IOException {
+		System.out.println("보고 싶은 구구단은?");
+		// 아스키 코드 값으로 계산하면 숫자가 나오게 된다.
+		// argument 대신에 실행시킬 때 값을 받아올 수 있을까
+		// input
+		// 
+		int num = System.in.read()-'0';;
+		int i = 1; // i값 초기화
+		
+		if (num >=2 && num <=20) {
+			while(i <= 9) {
+				System.out.println(num + " * " + i + " = " + num * i);
+				i ++;
+			}
+		}
+		else {
+			System.out.println("구구단에 없는 숫자입니다.");
+		}
+	}
+		// System.out.println("num-> " + num);
+}
+

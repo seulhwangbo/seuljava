@@ -1,0 +1,10 @@
+package ch02;
+
+public class GarbageValueEx {
+
+	public static void main(String[] args) {
+		byte var1 = 125;
+		int var2 = 125;
+	}
+
+}

@@ -1,0 +1,14 @@
+package ch01;
+
+public class Hello {
+
+	public static void main(String[] args) {
+		System.out.println("Hello, Java World");		
+		System.out.println("yes");
+		System.out.println("파이썬 쉽지 않네");
+		System.out.println("역시 장점이 하나 있으면 단점도 있네요");
+
+
+	}
+
+}

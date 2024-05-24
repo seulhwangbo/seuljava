@@ -1,0 +1,35 @@
+package ch02_ex01;
+
+public class FloatDoubleEx {
+
+	public static void main(String[] args) {
+		// 실수값 저장
+		double var1 = 3.14;
+		// 아무 정의 없이 사용된 소수점은 double 인식한다
+		// float  var2 = 3.14; -> 그냥 선언시 기본은 double
+		float  var2 = 3.14F;
+		
+		//정밀도 테스트
+		double var4 = 0.123456789123456789;
+		float var5 = 0.123456789123456789F;
+		// 잘릴 가능성이 있어서 float이나 byte 잘 사용 X
+		// double이나 int,long 사용
+		
+		int    var6 = 300000;
+		double var7 = 3e6;
+		// e6: 6개의 0
+		float  var8 = 3e6F;
+		double var9 = 2e-3;
+		// 시작이 숫자 2 -3은 소수점 3자리
+		
+		System.out.println("var1: " + var1);
+		System.out.println("var2: " + var2);
+		System.out.println("var4: " + var4);
+		System.out.println("var5: " + var5);
+		System.out.println("var6: " + var6);
+		System.out.println("var7: " + var7);
+		System.out.println("var8: " + var8);
+		System.out.println("var9: " + var9);
+	}
+
+}

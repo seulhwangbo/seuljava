@@ -1,0 +1,23 @@
+package ch04_ex01;
+
+import java.util.Scanner;
+
+public class Do03 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int cnt = 0, num;
+		int answer = (int)(Math.random()*100)+1; 
+		// 1부터 100까지의 정수
+		
+		do {
+			System.out.println("1부터 100 중 어떤 숫자일까요? ");
+			num = sc.nextInt();
+			
+			System.out.println("num->" + num);
+			
+		} while(true);
+	}
+
+}
