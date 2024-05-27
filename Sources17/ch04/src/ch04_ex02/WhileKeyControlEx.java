@@ -11,27 +11,47 @@ public class WhileKeyControlEx {
 		int		keyCode = 0;
 		
 		while(run) {
-			if(keyCode!=13 || keyCode !=10) 
-			{
+			if(keyCode !=13 && keyCode !=10) 
+			{	
 				System.out.println("-----------------------");
 				System.out.println("1.증속 | 2. 감속 | 3. 중지");
 				System.out.println("-----------------------");
 				System.out.print("선택: ");
+			}
+				
 				keyCode = System.in.read();
-				switch(keyCode) {
-				case '1' : speed += speed;
-				System.out.println("현재 속도: "+ speed);
 				
-				case '2' : speed -= speed;
-				System.out.println("현재 속도: " + speed);
-				
-				case '3' : run = false;
-				break;
+				if(keyCode == 49) {
+					speed++;
+					// ++speed; 도 같은 뜻이다.
+					System.out.println("현재의 스피드" + speed);
+				} else if (keyCode == 50) {
+					speed--;
+					System.out.println("현재의 스피드" + speed);
+				} else if(keyCode == 51 ) {
+					run = false;
 				}
 				
+				/* switch (keyCode) {
+				case '1' : 
+						speed++;
+						System.out.println("현재의 스피드" + speed );
+						break;
+				case '2' :
+						speed--;
+						System.out.println("현재의 스피드" + speed);
+						break;
+					
+				case '3' : 
+						run = false;
+						break;
+				}
+				
+				keyCode = System.in.read(); */
+
+				
 			
-			
-		//	System.out.println("keyCode->"+keyCode);
+	//System.out.println("keyCode->"+keyCode);
 				
 			
 //			선택: 1
@@ -60,8 +80,6 @@ public class WhileKeyControlEx {
 			
 // 0
 		}
+		System.out.println("PGM The End");		
 		}	
-	System.out.println("PGM The End");		
-	}
-	
 	}
