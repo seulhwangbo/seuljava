@@ -41,7 +41,7 @@ public class OverRide03 {
 	public static void main(String[] args) {
 		// C1 c1= new C1();
 		// 추상 Class는 생성 안 된다 => 추상메소드가 하나라도 있으면 인스턴스화 시킬 수 없다
-		// 반드시 구현한 이후에야 인스턴스화 시킬 수 있다.
+		// 반드시 상속 받아서 구현한 이후에야 인스턴스화 시킬 수 있다.
 		C1 c1 = new C2();
 		c1.setK(12);
 		c1.print();

@@ -4,12 +4,10 @@ package ch07_ex01;
 class D1{
 	int result = 0;
 	void hi(int cnt){
-		if(cnt>=0) {
-			result *=cnt;
-			System.out.println( "안녕, 나야!!  cnt-->" + cnt);
-			hi(--cnt);
-		} else return;
-		
+		System.out.println( "안녕, 나야!!  cnt-->" + cnt);
+			if(cnt<1) return;
+			hi(-- cnt);
+		} 
 		
 		
 	}
@@ -21,5 +19,4 @@ public class HiEx {
 		d.hi(6);
 	}
 
-}
 }

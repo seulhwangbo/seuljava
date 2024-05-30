@@ -2,9 +2,21 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="ch06_ex01.Car"/>
+    <fullyQualifiedTypeName name="ch06_ex01.Car3"/>
+    <fullyQualifiedTypeName name="ch06_ex01.Card"/>
+    <fullyQualifiedTypeName name="ch06_ex09.PakTest01"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="ch08_ex01.SeperateVolume"/>
+    <fullyQualifiedTypeName name="java.util.zip.CheckedOutputStream"/>
+    <fullyQualifiedTypeName name="ch08_ex01.Robot"/>
+    <fullyQualifiedTypeName name="ch08_ex02.Engine"/>
+    <fullyQualifiedTypeName name="java.lang.Number"/>
+    <fullyQualifiedTypeName name="java.awt.Shape"/>
 </qualifiedTypeNameHistroy>

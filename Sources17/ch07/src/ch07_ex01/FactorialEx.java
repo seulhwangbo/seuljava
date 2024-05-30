@@ -10,6 +10,8 @@ class Fac1 {
 			result *= cnt;
 			System.out.print(cnt + " * ");
 			factorial(--cnt);
+			// 반드시 조건을 주어야 한다.
+			// 탈출구 역할 
 		} else {
 			System.out.println(cnt);
 			System.out.println("Factorial 결과는 " + result);

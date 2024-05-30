@@ -11,6 +11,9 @@ class SingleTon{
 //  같은 클래스 내의 메소드는 private라고 할지라도 선언이 가능했다.
 //  getInstance = 인스턴스를 생성하려면 나를 통해서 해라
 //  return 이 singleTon
+// 	getter과 setter를 쓰는 느낌으로 확인하기
+//  getter * setter 명령 규칙 
+// 	" return형이 무조건 instance"
 	public static SingleTon getInstance() {
 		if (instance == null) instance = new SingleTon();
 		return instance;

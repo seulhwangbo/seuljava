@@ -1,38 +1,42 @@
 package ch08_ex01;
 
 public interface Lenderable {
+	// 소스에 대한 이해를 위해 이름을 굳이 이런 식으로 했다.
+	// interface 내부에서 선언하는 것들은 자동적으로 상수
 	int BORROW = 1;
 	int NORMAL = 0;
-
-	void checkOut(String borrower, String date);
-
+	// final 상수이기 때문에 대문자로 들어간다.
+	abstract void checkOut(String borrower, String date);
+	// abstract은 생략 가능하다 interface는 전부 abstract method다.
 	void checkin();
 }
-
+	// Extends(확장) vs Implements(구현)
+	// 클라스상속          메소드 상속
 class SeperateVolume implements Lenderable {
+	// 내부 구현은 변수로 사용 가능하다.
 	String title;
 	String date;
 	String borrower;
 	int status;
-
+	// 커뮤니케이션 비용을 아끼기 위해서 이름값을 확실하게 표시한다.
+	// Void 지만 생성자기 때문에 void 쓰지 않는다.
 	SeperateVolume(String title) {
 		this.title = title;
 	}
-
+// 책 대여 method: 상태가 NORMAL일 때만 책을 대여한다.
 	public void checkOut(String borrower, String date) {
-		if (status != NORMAL)
-			return;
+		if (status != NORMAL) return;
 		this.date = date;
 		this.borrower = borrower;
 		status = BORROW;
-
-		System.out.println(borrower + "가" + date + "일에" + title + "을 대여했다");
+// 대여 후에는 상태를 변경한다.
+		System.out.println(borrower + "가 " + date + "일에 " + title + "을 대여했다");
 	}
-
+	// 책 반환 method => BORROW인 상태에만 실행된다.
+	@Override
 	public void checkin() {
-		if (status != BORROW)
-			return;
-		System.out.println(borrower + " 가 " + title + "을 반납했다.");
+		if (status != BORROW) return;
+		System.out.println(borrower + "가 " + title + "을 반납했다.");
 		date = null;
 		title = null;
 		borrower = null;

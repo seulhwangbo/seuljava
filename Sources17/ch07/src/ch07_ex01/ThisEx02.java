@@ -27,6 +27,7 @@ class G2 {
 public class ThisEx02 {
 
 	public static void main(String[] args) {
+		
 		G2 g2 = new G2(7);
 		g2.print();
 		G2 g3 = new G2(7,13);
