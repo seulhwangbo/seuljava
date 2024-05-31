@@ -5,12 +5,14 @@ public class Car {
 	// member 변수, 인스탄스 변수, 필드
 	String kind;
 	Engine eg; 
+	// 여려 개의 객체를 모아놓은 것이다.
 	// type, cc, method(print)
 	// 객체를 멤버 변수로 둘 수 있다
 	// 기본 변수를 선언하지 않아도 기본변수도 선언 가능한가
 	// 객체는 상자값일 뿐이다
 	// 실무에서 자주 사용하는 것이기에 잘 알고 있는 것이 좋다
 	// 종합선물세트처럼 들고 다니기
+	// 값으로 선언하는 것이 아니라 주소로 선언해야 하기 때문에 reference가 되는 것이다.
 
 	public Car(String kind, Engine eg) {
 		this.kind = kind;
@@ -21,6 +23,7 @@ public class Car {
 		System.out.println("종류 : " + kind);
 		eg.print();
 		//중간에 먼저 나온다는 점 확인
+		//주소값을 미리 넣었으니 네가 알아서 처리해라
 		System.out.println("============ ");
 	}
 
@@ -39,6 +42,7 @@ public class Car {
 		for (Car c1 : c) {
 			c1.print();
 		}
+		// 로직화 시켜서 사용
 		//  안 좋은 코딩 방식
 		//	Car c1 = new Car("소나타", eg1);
 		//	c1.print();

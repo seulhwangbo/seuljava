@@ -8,6 +8,8 @@ public interface Lenderable {
 	// final 상수이기 때문에 대문자로 들어간다.
 	abstract void checkOut(String borrower, String date);
 	// abstract은 생략 가능하다 interface는 전부 abstract method다.
+	// 사용하는 경우가 있기 때문에 익숙하게 하기 위한 것
+	// 인터페이스는 다 public...
 	void checkin();
 }
 	// Extends(확장) vs Implements(구현)
@@ -23,6 +25,7 @@ class SeperateVolume implements Lenderable {
 	SeperateVolume(String title) {
 		this.title = title;
 	}
+// 반드시 구현해야 한다.
 // 책 대여 method: 상태가 NORMAL일 때만 책을 대여한다.
 	public void checkOut(String borrower, String date) {
 		if (status != NORMAL) return;

@@ -31,10 +31,11 @@ class F4 implements F3{
 	
 }
 
+
+
 //class에서 다중상속을 받는데 인터페이스를 두 개
 //extend는 다중상속 x implements는 다중상속
 //다중 상속은 2개 이상도 가능하다.
-
 class F5 implements F1, F2{
 
 	@Override

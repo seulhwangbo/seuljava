@@ -1,22 +1,23 @@
 package ch08_ex01;
 
-class A1{
-	 private int kkk;
+class A1 {
+	private int kkk;
+
 // 부모에 private를 제공
-	 public void print() {
-		 System.out.println("부모 메소드 print");
-	 }
+	public void print() {
+		System.out.println("부모 메소드 print");
+	}
 }
 
-class A2 extends A1{
+class A2 extends A1 {
 //  @Override
 //public void print() {
 //	// TODO Auto-generated method stub
 //	super.print();
 //}
-  public void print3() {
-	  System.out.println("A2의 print3 메소드");
-  }
+	public void print3() {
+		System.out.println("A2의 print3 메소드");
+	}
 }
 
 public class OverRide01 {

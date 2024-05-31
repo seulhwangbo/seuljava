@@ -15,6 +15,7 @@ public class ShapeEx {
 			s.draw();
 			if (s instanceof Rectangle) {
 				((Rectangle)s).display();
+			// rectangle일 때만 그 객체가 형변환을 해야 하기 때문에 사용하는 것
 			}
 		}
 	}
