@@ -11,7 +11,7 @@ public class LinkedListEx01 {
 		for(int i = 0; i < animal.length; i++) {
 			kk.add(animal[i]);
 		}
-		System.out.println("kk->" + kk);
+		System.out.println("kk1->" + kk);
 		
 		int i = 0;
 		Iterator<String> it = kk.iterator();
@@ -19,6 +19,7 @@ public class LinkedListEx01 {
 			System.out.println(i + " - > " + it.next());
 			i++;
 		}
+		System.out.println("kk2->" + kk);
 		
 		
 		System.out.println("--------Simple---------");
@@ -27,6 +28,7 @@ public class LinkedListEx01 {
 			System.out.println(i + "-> " + kk.poll());
 			i++;
 		}
+		System.out.println("kk3->" + kk);
 	}
 
 }
