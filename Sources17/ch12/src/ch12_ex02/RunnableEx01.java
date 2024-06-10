@@ -34,6 +34,7 @@ public class RunnableEx01 {
 		Ra1 r1 = new Ra1();
 		Ra2 r2 = new Ra2();
 		// 한번더 감싸 주어라 이것이 문법이다.
+		// implement 한 것은 반드시 아래와 같은 선언 후 사용
 		Thread th1 = new Thread(r1,"Pr");
 		Thread th2 = new Thread(r2,"no");
 		
