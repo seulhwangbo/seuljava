@@ -26,6 +26,7 @@ public class LinkedListEx01 {
 		i = 0;
 		while(!kk.isEmpty()) {
 			System.out.println(i + "-> " + kk.poll());
+			// 조회하면서 없애주는 것이 .poll
 			i++;
 		}
 		System.out.println("kk3->" + kk);

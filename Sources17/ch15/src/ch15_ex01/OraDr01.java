@@ -11,7 +11,7 @@ public class OraDr01 {
 		String url = "jdbc:oracle:thin:@127.0.0.1:1521:xe";
 		System.out.println("Start1");
 		try {
-			Class.forName(driver);
+//			Class.forName(driver);
 			// driver의 문제일 수 있다
 			// Oracle Driver을 메모리에 올리는 것 memory up
 			System.out.println("Start2");

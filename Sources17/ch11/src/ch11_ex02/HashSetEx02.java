@@ -19,6 +19,7 @@ public class HashSetEx02 {
 		
 		while(true) {
 			int num = (int)(Math.random()*45)+1;
+			// 46으로 쓰면 안 된다는 점 확인하기
 			System.out.println("num->" + num);
 			hs.add(num);
 			if (hs.size() == 6)
