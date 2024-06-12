@@ -26,12 +26,15 @@ try {
 			stmt    = conn.createStatement();      // stmt  
 			rs      = stmt.executeQuery(sql);      // SQL 
 			 // rs  Row 
-			if (rs.next()) {                             
+			if (rs.next()) {
+				do 
+				{
 				String dname = rs.getString("dname");  // rs.getString(1)  <-- dname
 				String loc   = rs.getString("loc");    // rs.getString(2)  <-- loc
 				System.out.println("부서명 :" + deptno);
 				System.out.println("부서명 :" + dname);
 				System.out.println("위치  :"  + loc);
+				} while(rs.next());
 			}
 			else {
 				System.out.println("자료가 없습니다" );

@@ -1,5 +1,5 @@
 package ch15_ex01;
-
+// 키를 포함해서 전부 날리는 것을 delete고 row만 날리는 것은 update로 해야 한다.
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
