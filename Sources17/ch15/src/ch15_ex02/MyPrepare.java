@@ -22,6 +22,7 @@ public class MyPrepare {
 		PreparedStatement pstmt = null;
 		String driver = "com.mysql.cj.jdbc.Driver" ;
 		String url = "jdbc:mysql://127.0.0.1:3306/scottdb";
+		
 		String sql = "Insert Into division values(?,?,?,?)";
 				
 		try {
@@ -32,8 +33,8 @@ public class MyPrepare {
 			pstmt.setString(2, dname);
 			pstmt.setString(3, phone);
 			pstmt.setString(4, position);
-			int result = pstmt.executeUpdate();
 			
+			int result = pstmt.executeUpdate();
 			if (result > 0 ) System.out.println(" MySql 입력 성공 ^^");
 			else 			 System.out.println(" MySql 입력 실패");
 		} catch (Exception e) {

@@ -16,6 +16,7 @@ public class MyDelete {
 		Statement  stmt = null;
 		String     driver = "com.mysql.cj.jdbc.Driver" ;
 		String     url 	  = "jdbc:mysql://127.0.0.1:3306/scottdb";
+		
 		String     sql 	  = "DELETE from division where DNO = " + dno;
 
 		try {

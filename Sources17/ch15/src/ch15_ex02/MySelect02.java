@@ -13,7 +13,7 @@ public class MySelect02 {
 	public static void main(String[] args) throws SQLException {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("교수 코드를 입력하세요");
-		int profno = sc.nextInt();
+		
 		
 		String driver = "com.mysql.cj.jdbc.Driver" ;
 		String url 	  = "jdbc:mysql://127.0.0.1:3306/scottdb";
@@ -36,17 +36,19 @@ public class MySelect02 {
 			
 			if (rs.next()) {
 			  do {
+				int profno 		= rs.getInt(1);
 				String name     = rs.getString("name");
 				String position = rs.getString("position");
 				String sal      = rs.getString("sal");
 				String deptno   = rs.getString("deptno");
 				
-				System.out.print(profno  +"\t");
-				System.out.print(name    +"\t");
-				System.out.print(position+"\t");
-				System.out.print(sal     +"\t");
-				System.out.print(deptno  +"\t");
-				System.out.println();
+				System.out.printf("%d\t%s\t%s\t%s\t%s\n",profno,name,position,sal,deptno);
+//				System.out.print(profno  +"\t");
+//				System.out.print(name    +"\t");
+//				System.out.print(position+"\t");
+//				System.out.print(sal     +"\t");
+//				System.out.print(deptno  +"\t");
+//				System.out.println();
 			} while(rs.next());
 		}
 			else {
